@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+<meta charset="UTF-8">
+<title ng-bind="ngMeta.title"></title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+<link rel="shortcut icon" href="assets/img/favicon.png">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<base href="/booknow/">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"/>
+<script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
+<script>$(window).load(function(){$('#status').fadeOut();$('#preloader').delay(350).fadeOut('slow');$('body').delay(350).css({'overflow':'visible'})})</script>
+</head>
+<body ng-controller="Home">
+<div id="preloader">
+<div class="linear-activity">
+<div class="indeterminate"></div>
+</div>
+</div>
+<div ng-include="'themes/default/header.html'"></div>
+<div ng-view></div>
+<div ng-include="'themes/default/footer.html'"></div>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular-route.min.js"></script>
+<script src="assets/js/ngMeta.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+

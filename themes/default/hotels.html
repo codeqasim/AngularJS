@@ -1,0 +1,28 @@
+
+    <div class="form-group"></div>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-3">
+    <div style="height:570px" class="jumbotron">
+    </div>
+    </div>
+    <div class="col-md-9">
+    <div class="list mb10" ng-repeat="x in items">
+    <div class="row">
+    <div class="col-md-2">
+    <a href="#">
+    <img style="width: 100%;" class="img-fluid" src="https://images.travelnow.com/{{x.thumbNailUrl}}" alt="NATIONAL HOTEL LAHORE">
+    </a>
+    </div>
+    <div class="col-md-10 panel-body">
+    <h4><a class="ellipsis" href="">{{x.name}}</a></h4>
+    <p>{{x.address1}}<span class="stars"> <span ng-repeat="x in [].constructor(5) track by $index" class="text-warning">&#9733;</span> <small>{{x.hotelRating}}/5</small></span> <a href="" class="btn btn-primary float-right" title="">Book Now</a></p>
+    <h5><small>USD</small> <strong>{{x.lowRate}}</strong></h5>
+    <hr class="hidden-xs">
+    <!--<p>{{x.shortDescription.substr(0,250)}}</p>-->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
