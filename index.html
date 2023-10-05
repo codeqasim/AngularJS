@@ -13,19 +13,24 @@
 <script>$(window).load(function(){$('#status').fadeOut();$('#preloader').delay(350).fadeOut('slow');$('body').delay(350).css({'overflow':'visible'})})</script>
 </head>
 <body ng-controller="Home">
+    
 <div id="preloader">
 <div class="linear-activity">
 <div class="indeterminate"></div>
 </div>
 </div>
+
 <div ng-include="'themes/default/header.html'"></div>
 <div ng-view></div>
 <div ng-include="'themes/default/footer.html'"></div>
+
+
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/angular.min.js"></script>
 <script src="assets/js/angular-route.min.js"></script>
 <script src="assets/js/ngMeta.js"></script>
 <script src="assets/js/app.js"></script>
+
 </body>
 </html>
 
